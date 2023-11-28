@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Data</title>
+</head>
+<body>
+    <h1>Data Signing</h1>
+    <p>Signed Data: {{ signed_data }}</p>
+
+    <h2>Saved Signed Data from Database</h2>
+    {% for signed_data_object in signed_data_objects %}
+        <p>Data: {{ signed_data_object.data }}, Signature: {{ signed_data_object.signature }}</p>
+    {% endfor %}
+</body>
+</html>
